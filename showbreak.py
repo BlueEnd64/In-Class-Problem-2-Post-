@@ -15,8 +15,8 @@ while __name__:
       fatN = factorial(int(N))
       if int(N)>=0:
          break
-   except ValueError:
-      print("ValueError")
+   except ValueError as vee:
+      print("ValueError %s."%vee)
       print('N must be non-negative integer.')
       continue
    
